@@ -1,4 +1,4 @@
-FROM telegraf:1.19.3
+FROM telegraf:1.20.4
 
 RUN apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_16.x | bash - \
