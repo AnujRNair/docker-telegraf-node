@@ -3,7 +3,9 @@ version: '3.4'
 services:
   telegraf:
     container_name: telegraf
-    image: telegraf-node:1.19.3
+    image: telegraf-node:1.23.0
     restart: "no"
     ports:
-      - "8125:8125"
+      - 8092:8092 # UDP
+      - 8094:8094 # TCP
+      - 8125:8125 # StatsD
