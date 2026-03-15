@@ -3,7 +3,7 @@ version: '3.4'
 services:
   telegraf:
     container_name: telegraf
-    image: telegraf-node:1.23.0
+    image: anujrnair/telegraf-node:1.38.0
     restart: "no"
     ports:
       - 8092:8092 # UDP

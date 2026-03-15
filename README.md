@@ -1,6 +1,7 @@
 # telegraf-node
 
 Telegraf with node support
+- 1.38.0 with Node 24
 - 1.23.0 with Node 18
 - 1.20.4 with Node 16
 - 1.19.3 with Node 16
@@ -13,5 +14,5 @@ Telegraf with node support
 
 ```
 $ docker login
-$ docker buildx build --push --platform linux/amd64,linux/arm64 -t anujrnair/telegraf-node:<"latest" | version> .
+$ docker buildx build --platform linux/amd64,linux/arm64 -t anujrnair/telegraf-node:latest -t anujrnair/telegraf-node:<telegraf-version> . --push
 ```
